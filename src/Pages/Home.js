@@ -12,6 +12,9 @@ import '../Asserts/css/App.css';
 import { Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button';
 
+import About from "./About";
+import Blog from "./Blog";
+import Guides from "./Guides";
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
@@ -25,7 +28,7 @@ function TabPanel(props) {
 			{...other}
 		>
 			{value === index && (
-				<Box p={0}>
+				<Box p={3}>
 					<Typography>{children}</Typography>
 				</Box>
 			)}
@@ -77,10 +80,10 @@ export default function FullWidthTabs() {
 					variant="fullWidth"
 					aria-label="full width tabs example"
 				>
-					<Tab label="Item One" {...a11yProps(0)} />
-					<Tab label="Item Two" {...a11yProps(1)} />
-					<Tab label="Item Three" {...a11yProps(2)} />
-					<Tab label="Item Four" {...a11yProps(3)} />
+					<Tab label="Home" {...a11yProps(0)} />
+					<Tab label="About" {...a11yProps(1)} />
+					<Tab label="Blog" {...a11yProps(2)} />
+					<Tab label="Guide" {...a11yProps(3)} />
 				</Tabs>
 			</AppBar>
 			<SwipeableViews
@@ -99,13 +102,13 @@ export default function FullWidthTabs() {
 					</header>
 				</TabPanel>
 				<TabPanel value={value} index={1} dir={theme.direction}>
-					Item Two
+					<About />
 				</TabPanel>
 				<TabPanel value={value} index={2} dir={theme.direction}>
-					Item Three
+					<Blog />
 				</TabPanel>
 				<TabPanel value={value} index={3} dir={theme.direction}>
-					Item Four
+					<Guides />
 				</TabPanel>
 			</SwipeableViews>
 		</div>

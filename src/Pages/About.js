@@ -10,12 +10,7 @@ class About extends Component {
 		return (
 			<div>
 				<header className="App-header">
-					<p>I am Dan</p>
-					{this.props.market.apple}
-					<br />
-					<button onClick={() => {this.props.dispatch(updateApple('2'))}}>Change Number</button>
-					<br />
-					<Button variant="contained"><Link to="./">Home Page</Link></Button>
+					<h2>About Me</h2>
 				</header>
 			</div>
 		);
