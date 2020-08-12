@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Asserts/index.css';
+import './Asserts/css/index.css';
 import Routes from './Routes';
 import * as serviceWorker from './serviceWorker';
 

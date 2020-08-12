@@ -1,11 +1,11 @@
 import React from 'react';
-import './Asserts/App.css';
+import './Asserts/css/App.css';
 
 import { Switch, Route } from 'react-router-dom';
-import About from "./Components/About";
-import Home from "./Components/Home";
-import Blog from "./Components/Blog";
-import Guides from "./Components/Guides";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
+import Blog from "./Pages/Blog";
+import Guides from "./Pages/Guides";
 
 function Routes() {
   return (
