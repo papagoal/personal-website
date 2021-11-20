@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React Routes](https://github.com/facebook/create-react-app).
+=======
+# fightdan.com
+>>>>>>> master
 
-## Available Scripts
+Dan's personal website
 
+<<<<<<< HEAD
 In the project directory, you can run:
 
 ### `yarn start`
@@ -79,3 +84,6 @@ update your project
 
 deploy application to public
 
+=======
+Working in Progress
+>>>>>>> master
